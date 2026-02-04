@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" parallel="methods" thread-counts="4"  verbose="1">
+  <test name="Verify Login">
+  <parameter name="browserName" value="${browserName}"/>
+  <parameter name="isHeadless" value="${isHeadless}"/>
+  <parameter name="isLambda" value="${isLambda}"/>
+  
+    <classes>
+       <class name="com.clearconcepts.test.Logintest"/>
+    </classes>
+  </test>
+
+ 
+</suite>
